@@ -70,12 +70,12 @@ Opencv 사용
     - 다른 모델들에 비해 정확도가 떨어진다.
         
         
-[img](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FlqVvp%2FbtqKv79n5Pr%2FlJJ0EoK0sb8kVrLShiMo7k%2Fimg.png)
+![img](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FlqVvp%2FbtqKv79n5Pr%2FlJJ0EoK0sb8kVrLShiMo7k%2Fimg.png)
 
 
 
 2. YOLOv5 세부모델의 종류
-[img](https://github.com/ultralytics/yolov5/releases/download/v1.0/model_comparison.png)
+![img](https://github.com/ultralytics/yolov5/releases/download/v1.0/model_comparison.png)
 
 
 
@@ -88,7 +88,7 @@ Opencv 사용
 | [YOLOv5x6](https://github.com/ultralytics/yolov5/releases) TTA | 1280          | **55.0**        | **55.0**         | **72.0**   | 70.8            |      | -          | -             |
 
 
-[img](https://github.com/ultralytics/yolov5/releases/download/v1.0/model_plot.png)
+![img](https://github.com/ultralytics/yolov5/releases/download/v1.0/model_plot.png)
 
 
 3. 네트워크 구조
