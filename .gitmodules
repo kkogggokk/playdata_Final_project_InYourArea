@@ -1,0 +1,3 @@
+[submodule "modeling/--name"]
+	path = modeling/--name
+	url = https://github.com/ultralytics/yolov5
