@@ -1,8 +1,0 @@
-<<<<<<< HEAD
-[submodule "modeling/yolov5"]
-	path = modeling/yolov5
-=======
-[submodule "modeling/--name"]
-	path = modeling/--name
->>>>>>> main
-	url = https://github.com/ultralytics/yolov5
