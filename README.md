@@ -148,18 +148,18 @@ Opencv 사용
 
 
 # 5. 웹
-[Web Application Sever Structrue](https://raw.githubusercontent.com/kkogggokk/Fproject/main/web/static/images/WAS%20structure.png)
+![Web Application Sever Structrue](https://raw.githubusercontent.com/kkogggokk/Fproject/main/web/static/images/WAS%20structure.png)
 
 
 ```bash
 ├── app
 │     ├── library
-│     │    └── helpers.py      - 비정제, 정제, temp (-> 추론 데이터)
-│     ├── pages                - 각 모델별(VGG, MobilNetV2, LSTM) 생성 파일
-│     │    ├── home.md         - 비정제, 정제, temp (-> 추론 데이터)
-│     │    ├── profile.md      - 비정제, 정제, temp (-> 추론 데이터)
-│     │    └── readme.md       - 비정제, 정제, temp (-> 추론 데이터)
-│     └── preprocessing.py     - 학습 데이터 생성 file
+│     │    └── helpers.py      
+│     ├── pages                
+│     │    ├── home.md         
+│     │    ├── profile.md      
+│     │    └── readme.md       
+│     └── preprocessing.py     
 ├── static
 │     ├── css
 │     ├── images
