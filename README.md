@@ -148,8 +148,28 @@ Opencv 사용
 
 
 # 5. 웹
+[Web Application Sever Structrue](https://raw.githubusercontent.com/kkogggokk/Fproject/main/web/static/images/WAS%20structure.png)
 
 
+```bash
+├── app
+│     ├── library
+│     │    └── helpers.py      - 비정제, 정제, temp (-> 추론 데이터)
+│     ├── pages                - 각 모델별(VGG, MobilNetV2, LSTM) 생성 파일
+│     │    ├── home.md         - 비정제, 정제, temp (-> 추론 데이터)
+│     │    ├── profile.md      - 비정제, 정제, temp (-> 추론 데이터)
+│     │    └── readme.md       - 비정제, 정제, temp (-> 추론 데이터)
+│     └── preprocessing.py     - 학습 데이터 생성 file
+├── static
+│     ├── css
+│     ├── images
+│     ├── js
+│     └── videos
+├── templates
+│     ├── include
+│     ├── base.html
+│     └── page.html
+```
  
 > -  한계점
 > 1. 실시간 추론 불가 (시간이 오래 걸린다) + 변수가 너무 많아서 알고리즘으로 정확한 결과추출 한계 , 얼굴을 구별할 수 없는 경우 발생하는 null값 실시간으로 채우기 힘듬
