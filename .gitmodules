@@ -1,0 +1,3 @@
+[submodule "modeling/--force"]
+	path = modeling/--force
+	url = https://github.com/ultralytics/yolov5
