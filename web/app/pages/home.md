@@ -17,24 +17,23 @@
         <H2>BLACK PINK - lovesick girl</H2>
         <p>Blackpink released their debut full-length studio LP, The Album, at midnight on Thursday alongside dropping a new video for their new single, “Lovesick Girls.” The K-pop stars premiered the video during the debut of YouTube Originals 16-episode music series Released.</p>
     </div>
-    <div class="video-sec">
-        <div class="video-container">
-            <video id="a" preload="auto" controls>
-                <source src="../static/videos/bp_lovesickgirl.mp4" type="video/mp4"></source>
-            </video>
-            <video id="b" preload="auto" muted>
-                <!-- <source src="../static/videos/rose.mp4" type="video/mp4"></source>
-                <source src="../static/videos/lisa.mp4" type="video/mp4"></source>
-                <source src="../static/videos/jennie.mp4" type="video/mp4"></source>
-                <source src="../static/videos/jisoo.mp4" type="video/mp4"></source> -->
-            </video>
-        </div>
-        <div class="btn-container" style="text-align:center">
-            <img src="../static/images/rose_logo.png" onclick="btnClick('../static/videos/rose.mp4')">
-            <img src="../static/images/lisa_logo.png" onclick="btnClick('../static/videos/lisa.mp4')">
-            <img src="../static/images/jennie_logo.png" onclick="btnClick('../static/videos/jennie.mp4')">
-            <img src="../static/images/jisoo_logo.png" onclick="btnClick('../static/videos/jisoo.mp4')">
-        </div>
+    <div class="video-container">
+        <video id="a" preload="auto" controls>
+            <source src="../static/videos/1080.mp4" type="video/mp4"></source>
+        </video>
+        <video id="b" autoplay="autoplay" loop muted>
+            <source src="../static/videos/ad.mp4" type="video/mp4"></source>
+            <source preload="auto" src="../static/videos/rose.mp4" type="video/mp4"></source>
+            <source preload="auto" src="../static/videos/lisa.mp4" type="video/mp4"></source>
+            <source preload="auto" src="../static/videos/jennie.mp4" type="video/mp4"></source>
+            <source preload="auto" src="../static/videos/jisoo.mp4" type="video/mp4"></source>
+        </video>
+    </div>
+    <div class="btn-container" style="text-align:center">
+        <img src="../static/images/rose_logo.png" onclick="btnClick('../static/videos/rose.mp4')">
+        <img src="../static/images/lisa_logo.png" onclick="btnClick('../static/videos/lisa.mp4')">
+        <img src="../static/images/jennie_logo.png" onclick="btnClick('../static/videos/jennie.mp4')">
+        <img src="../static/images/jisoo_logo.png" onclick="btnClick('../static/videos/jisoo.mp4')">
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>
@@ -102,18 +101,6 @@
         }
         requestAnimationFrame(sync); //TODO : === requestAnimationFrame 확인 
         }
-        function btnClick_1111(srcVideo){
-            // var orginVideo = $('[name="video-container"]').attr('#a'); 
-            // let orginVideo = document.getElementById("a").video_container;
-            // let resultVideo = document.getElementById("b").video_container;
-            let source = document.createElement("source");
-            console.log("[o]" + orginVideo)
-            console.log("[r]" + resultVideo)
-            // resultVideo.setAttribute('src',srcVideo) //여기서 에러 
-            // orginVideo.appendChild(source);
-            // sync();
-            // resultVideo.play()
-        }
         function btnClick(srcVideo){
             let orinVideo = document.getElementById("a");
             let resultVideo = document.getElementById("b");
@@ -121,7 +108,6 @@
             resultVideo.setAttribute('src',srcVideo)
             orinVideo.appendChild(source);
             sync();
-            resultVideo.play()
         }
     </script>
 </body>

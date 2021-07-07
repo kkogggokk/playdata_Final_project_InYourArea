@@ -64,8 +64,12 @@ section img#bp_member{
     position: relative;
     padding: 100px;
     background-color: black;
+    /* border:3px solid red; */
+    width: 100%;
+    height: 400px;
 }
 .video-container {
+    /* border:3px solid blue; */
     position: relative;
     width: 100%;
     height: 400px;

@@ -14,14 +14,14 @@
         <div class="container">
             <div class="card">
                 <div class="content">
-                    <div class="imgBx"><img width="200px"  height="200px" src="../static/images/face1.jpg"></div>
+                    <div class="imgBx"><img width="200px"  height="200px" src="../static/images/face1.png"></div>
                     <div class="contentBx">
-                        <h3>Someone Famous<br><span>Create Designer</span></h3>
+                        <h3>강주연<br><span>데이터수집,라벨링,데이터처리</span></h3>
                     </div>
                 </div>
                 <ul class="sci">
                     <li style="--i:1">
-                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="https://github.com/Juyeon-music"><i class="fab fa-github"></i></a>
                     </li>
                     <li style="--i:2">
                         <a href="#"><i class="fab fa-linkedin-in"></i></a>
@@ -33,14 +33,14 @@
             </div>
              <div class="card">
                 <div class="content">
-                    <div class="imgBx"><img width="200px"  height="200px" src="../static/images/face2.jpg"></div>
+                    <div class="imgBx"><img width="200px"  height="200px" src="../static/images/face2.png"></div>
                     <div class="contentBx">
-                        <h3>Someone Famous<br><span>Create Designer</span></h3>
+                        <h3>문종해<br><span>모델링</span></h3>
                     </div>
                 </div>
                 <ul class="sci">
                     <li style="--i:1">
-                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="https://github.com/klaus126"><i class="fab fa-github"></i></a>
                     </li>
                     <li style="--i:2">
                         <a href="#"><i class="fab fa-linkedin-in"></i></a>
@@ -54,14 +54,14 @@
         <div class="container">
             <div class="card">
                 <div class="content">
-                    <div class="imgBx"><img width="200px"  height="200px" src="../static/images/face3.jpg"></div>
+                    <div class="imgBx"><img width="200px"  height="200px" src="../static/images/face3.png"></div>
                     <div class="contentBx">
-                        <h3>Someone Famous<br><span>Create Designer</span></h3>
+                        <h3>안희진<br><span>라벨링, 웹서비스</span></h3>
                     </div>
                 </div>
                 <ul class="sci">
                     <li style="--i:1">
-                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="https://github.com/kkogggokk"><i class="fab fa-github"></i></a>
                     </li>
                     <li style="--i:2">
                         <a href="#"><i class="fab fa-linkedin-in"></i></a>
@@ -73,14 +73,14 @@
             </div>
              <div class="card">
                 <div class="content">
-                    <div class="imgBx"><img width="200px"  height="200px" src="../static/images/face4.jpg"></div>
+                    <div class="imgBx"><img width="200px"  height="200px" src="../static/images/face4.png"></div>
                     <div class="contentBx">
-                        <h3>Someone Famous<br><span>Create Designer</span></h3>
+                        <h3>현진명<br><span>Create Designer</span></h3>
                     </div>
                 </div>
                 <ul class="sci">
                     <li style="--i:1">
-                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="https://github.com/doramons"><i class="fab fa-github"></i></a>
                     </li>
                     <li style="--i:2">
                         <a href="#"><i class="fab fa-linkedin-in"></i></a>
