@@ -175,7 +175,7 @@ for *xyxy, conf, cls in reversed(det):
     1) 뒤돌아 있거나 옆모습
     3) 다른 멤버한테 겹쳐거나 가려지는 경우
     2) 앞 뒤 프레임 중간에 값이 빠져 있는 경우 
-- ![null](https://raw.githubusercontent.com/kkogggokk/playdata_Final_project_InYourArea/main/_backup/image/exam_4.3_null.png) 
+- ![null](https://raw.githubusercontent.com/kkogggokk/playdata_Final_project_InYourArea/main/_backup/image/exam_4.3_null.png)
 - 이를 해결 하기 위해 선형증가로 null값 채우고 이동평균값 구해서 튀는값 줄이기 : moving_avg_frame 함수
 ```
 #선형 증가값 적용
