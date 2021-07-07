@@ -238,10 +238,20 @@ output_video = cv2.VideoWriter("output.mp4", fourcc, fps, (final_w,final_h))
 
 
 ## 6.2.구현 방법 및 기능적 고민 
-1. 프론트적으로 구현하여 서비스 제공
-2. OpenCV, csv를 로드하여 서비스 제공
-3. 웹 소켓으로 서비스 제공 
-4. YOLOv5 모델을 태워 서비스 제공 
+✔️ 방법1. 프론트적으로 구현하여 서비스 제공
+![FrontImage](https://raw.githubusercontent.com/kkogggokk/playdata_Final_project_InYourArea/main/_backup/image/exam_6_frontFunction.png)
+```
+if (videos.b.media.readyState === 4) {
+    videos.b.currentTime(
+    videos.a.currentTime()
+    );
+}
+requestAnimationFrame(sync); 
+}
+```
+[] 방법2. OpenCV, csv를 로드하여 서비스 제공
+[] 방법3. 웹 소켓으로 서비스 제공 
+[] 방법4. YOLOv5 모델을 태워 서비스 제공 
 
 
 ## 6.3.이슈 
