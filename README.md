@@ -43,7 +43,7 @@ if(int(vidcap.get(1)) % 15 == 0):
 # PART2.라벨링
 - 멤버 라벨링 : 로제(0), 리사(1), 제니(2), 지수(3)
 - HOW? [Labelimg-master](https://github.com/tzutalin/labelImg)
-![Labelimg](https://raw.githubusercontent.com/kkogggokk/Fproject/main/_backup/image/exam_labeling.png)
+![Labelimg](https://github.com/kkogggokk/playdata_Final_project_InYourArea/blob/main/_backup/image/exam_1_labeling.png)
 
 ## 2.1.라벨링 기준 
 ⚙️ 1차 라벨링    
@@ -163,7 +163,9 @@ if(int(vidcap.get(1)) % 15 == 0):
 
 ## 4.2.csv로 저장하기 
 - /modeling/detect.py 
-- YOLOv5모델은 프레임마다 라벨링의 좌표를 각각의 txt파일로 저장한다. csv파일로 저장하기 위해 detect.py 파일 내 txt파일로 저장하는 부분인 --save-txt부분을 변경하여 각각의 txt파일을 하나의 csv파일로 저장하였다. 
+- YOLOv5모델은 프레임마다 라벨링의 좌표를 각각의 txt파일로 저장 
+- csv파일로 저장하기 위해 detect.py 파일 내 txt파일로 저장하는 부분인 --save-txt부분을 변경
+- 각각의 txt파일을 하나의 csv파일로 저장
 ```
 for *xyxy, conf, cls in reversed(det):
                 if save_txt:  # Write to file
@@ -173,6 +175,8 @@ for *xyxy, conf, cls in reversed(det):
                         csvWriter = csv.writer(f)
                         csvWriter.writerow([frame, int(cls), xywh[0], xywh[1], xywh[2], xywh[3]])
 ```
+![batch1_pred](https://raw.githubusercontent.com/kkogggokk/playdata_Final_project_InYourArea/main/_backup/image/exam_3_test_batch1_pred.jpg)
+
 
 ## 4.3.결측치 처리
 - /video-crop/blackpick_csv_seperate.ipynb
@@ -180,7 +184,7 @@ for *xyxy, conf, cls in reversed(det):
     1) 뒤돌아 있거나 옆모습
     3) 다른 멤버한테 겹쳐거나 가려지는 경우
     2) 앞 뒤 프레임 중간에 값이 빠져 있는 경우 
-- 📍 ![라벨링기준](사진경로) //위에 3경우 이미지파일 만들어서 업로드 하기 
+- 📍 ![null](https://raw.githubusercontent.com/kkogggokk/playdata_Final_project_InYourArea/main/_backup/image/exam_4.3_null.png) 
 - 이를 해결 하기 위해 선형증가로 null값 채우고 이동평균값 구해서 튀는값 줄이기 : moving_avg_frame 함수
 ```
 #선형 증가값 적용
@@ -194,8 +198,8 @@ for k in range(zero_len):
 # PART5.크롭 및 비디오저장 
 ## 5.1.소스코드 및 기능 설명
 - /video-crop/blackpink_videocrop.ipynb 
-- 각각의 멤버의 좌표값이 저장된 csv파일을 통해 가로200 * 세로630 사이즈의 크롭된 사진(이미지)를 생성한다. 
-- VideoWriter의 writer 메소드를 사용해 각각의 사진(이미지)을 mp4동영상(비디오)으로 출력이 된다. 
+- 각각의 멤버의 좌표값이 저장된 csv파일을 통해 가로200 * 세로630 사이즈의 크롭된 사진(이미지)를 생성.
+- VideoWriter의 writer 메소드를 사용해 각각의 사진(이미지)을 mp4동영상(비디오)으로 출력.
 ```
 fourcc = cv2.VideoWriter_fourcc(*'DIVX')
 output_video = cv2.VideoWriter("output.mp4", fourcc, fps, (final_w,final_h))
@@ -251,7 +255,9 @@ output_video = cv2.VideoWriter("output.mp4", fourcc, fps, (final_w,final_h))
 - 영상의 화질도 좋으면서 빠르게 로드할수 있는 방법
 - 채팅 기능 추가 
 - 모델을 태워 결과를 보여주는 갤러리 기능 추가 
-    - 이미지로 갤러리가 가능하면 동영상도 도전 
-- 모델을 태워 서비스가 된다면 데이터 수집과 라벨링 기능을 팬들의 참여와 재미를 줄 수 있는 방법 모색 
+- 이미지로 갤러리가 가능하면 동영상도 도전 
+- 팬들의 참여를 통해 데이터 수집 및 라벨링 기능 구현. 
+
+
 
 - 📍[InYourArea 링크]()
