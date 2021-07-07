@@ -18,8 +18,8 @@
 - [PART6.웹서비스](#part6웹서비스)
     - [6.1.fastAPI](#61fastapi)
     - [6.2.구현 방법 및 기능적 고민](#62구현-방법-및-기능적-고민)
-    - [6.3.이슈](#63-이슈)
-    - [6.4.디벨롭 방향](#64-디벨롭-방향)
+    - [6.3.이슈](#63이슈)
+    - [6.4.디벨롭 방향](#64디벨롭-방향)
 
 
 ***
@@ -192,6 +192,9 @@ for k in range(zero_len):
 - 각각의 멤버의 좌표값이 저장된 csv파일을 통해 가로200 * 세로630 사이즈의 크롭된 사진(이미지)를 생성.
 - VideoWriter의 writer 메소드를 사용해 각각의 사진(이미지)을 mp4동영상(비디오)으로 출력.
 ```
+final_w = 200    # output video width
+final_h = 630    # output video height
+
 fourcc = cv2.VideoWriter_fourcc(*'DIVX')
 output_video = cv2.VideoWriter("output.mp4", fourcc, fps, (final_w,final_h))
 
