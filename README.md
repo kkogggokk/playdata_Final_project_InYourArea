@@ -249,9 +249,9 @@ if (videos.b.media.readyState === 4) {
 requestAnimationFrame(sync); 
 }
 ```
-[] 방법2. OpenCV, csv를 로드하여 서비스 제공
-[] 방법3. 웹 소켓으로 서비스 제공 
-[] 방법4. YOLOv5 모델을 태워 서비스 제공 
+[] 방법2. OpenCV, csv를 로드하여 서비스 제공    
+[] 방법3. 웹 소켓으로 서비스 제공    
+[] 방법4. YOLOv5 모델을 태워 서비스 제공     
 
 
 ## 6.3.이슈 
