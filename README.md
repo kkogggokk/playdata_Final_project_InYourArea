@@ -137,6 +137,7 @@ if(int(vidcap.get(1)) % 15 == 0):
 
 
 ## 3.6.프로젝트 적용
+![batch1_pred](https://raw.githubusercontent.com/kkogggokk/playdata_Final_project_InYourArea/main/_backup/image/exam_3_test_batch1_pred.jpg)
 - 한계점 및 주의사항
     - 사람의 얼굴이 뭉개지는 등의 문제로 인식 자체가 안되는 경우가 있다.
     - 연예인들의 공연영상마다 의상이 달라서 전체 사이즈(사람 크기)로 학습이 어렵다.
@@ -175,8 +176,6 @@ for *xyxy, conf, cls in reversed(det):
                         csvWriter = csv.writer(f)
                         csvWriter.writerow([frame, int(cls), xywh[0], xywh[1], xywh[2], xywh[3]])
 ```
-![batch1_pred](https://raw.githubusercontent.com/kkogggokk/playdata_Final_project_InYourArea/main/_backup/image/exam_3_test_batch1_pred.jpg)
-
 
 ## 4.3.결측치 처리
 - /video-crop/blackpick_csv_seperate.ipynb
@@ -184,7 +183,7 @@ for *xyxy, conf, cls in reversed(det):
     1) 뒤돌아 있거나 옆모습
     3) 다른 멤버한테 겹쳐거나 가려지는 경우
     2) 앞 뒤 프레임 중간에 값이 빠져 있는 경우 
-- 📍 ![null](https://raw.githubusercontent.com/kkogggokk/playdata_Final_project_InYourArea/main/_backup/image/exam_4.3_null.png) 
+- ![null](https://raw.githubusercontent.com/kkogggokk/playdata_Final_project_InYourArea/main/_backup/image/exam_4.3_null.png) 
 - 이를 해결 하기 위해 선형증가로 null값 채우고 이동평균값 구해서 튀는값 줄이기 : moving_avg_frame 함수
 ```
 #선형 증가값 적용
