@@ -173,7 +173,7 @@ for *xyxy, conf, cls in reversed(det):
 - /video-crop/blackpick_csv_seperate.ipynb
 - 결측치가 존재.
     1) 뒤돌아 있거나 옆모습
-    3) 다른 멤버한테 겹쳐거나 가려지는 경우
+    3) 다른 멤버한테 겹쳐 가려지는 경우
     2) 앞 뒤 프레임 중간에 값이 빠져 있는 경우 
 - ![null](https://raw.githubusercontent.com/kkogggokk/playdata_Final_project_InYourArea/main/_backup/image/exam_4.3_null.png)
 - 이를 해결 하기 위해 선형증가로 null값 채우고 이동평균값 구해서 튀는값 줄이기 : moving_avg_frame 함수
@@ -194,13 +194,25 @@ for k in range(zero_len):
 ```
 fourcc = cv2.VideoWriter_fourcc(*'DIVX')
 output_video = cv2.VideoWriter("output.mp4", fourcc, fps, (final_w,final_h))
+
+success, frame = input_video.read()
+count = 0
+while success:
+    mem = df.iloc[count]
+    x = int(np.ceil(mem[2] * width)) - 80
+    y = int(np.ceil(mem[3] * height)) - 70
 ```
 
 
 ## 5.2.저장 시 프레임이 빠진 경우 발생
 - 원인 : 좌표에서 목표 범위 만큼 더하고 뺄 경우 기존 영상의 범위를 나가는 경우가 발생하여 writer 메소드 실행시 불포함하고 영상으로 저장
 - 해결 : 좌표 + 목표 영상크기가 범위 밖일 경우 영상 범위에서 목표크기로 추출할 수 있는 가장 끝값으로 출력하는 알고리즘 추가
-
+```
+if x + final_w > width:
+    x = width - 1 - final_w   
+if y + final_h >= height:
+    y = height - 1 - final_h
+```
 
 # PART6.웹서비스
 ![Web Application Sever Structrue](https://raw.githubusercontent.com/kkogggokk/Fproject/main/web/static/images/WAS%20structure.png)
