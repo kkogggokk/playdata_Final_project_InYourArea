@@ -23,6 +23,8 @@
 
 
 ***
+![Process](https://raw.githubusercontent.com/kkogggokk/playdata_Final_project_InYourArea/main/_backup/image/exam_process.png)
+
 
 # PART1.데이터수집
 - 각 멤버에 대한 얼굴을 인식하기 위해서는 멤버의 사진이 필요 
