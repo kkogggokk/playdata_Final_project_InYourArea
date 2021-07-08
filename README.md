@@ -138,7 +138,8 @@ if(int(vidcap.get(1)) % 15 == 0):
 - 훈련단계에서 학습하지 못한 박스의 종횡비(aspect ratio)는 잘 예측 안된다.
 
 
-## 3.6.프로젝트 적용
+## 3.6.모델 적용 및 결과
+![model_result](https://raw.githubusercontent.com/kkogggokk/playdata_Final_project_InYourArea/main/_backup/image/exam_model_result.png)
 ![batch1_pred](https://raw.githubusercontent.com/kkogggokk/playdata_Final_project_InYourArea/main/_backup/image/exam_3_test_batch1_pred.jpg)
 - 한계점 및 주의사항
     - 사람의 얼굴이 뭉개지는 등의 문제로 인식 자체가 안되는 경우가 있다.
@@ -274,8 +275,15 @@ requestAnimationFrame(sync);
 - 모델을 태워 결과를 보여주는 갤러리 기능 추가 
 - 이미지로 갤러리가 가능하면 동영상도 도전 
 - 팬들의 참여를 통해 데이터 수집 및 라벨링 기능 구현
-- - 채팅 기능 추가 
-
+-  채팅 기능 추가 
 
 
 - 📍[InYourArea 링크](http://3.35.235.214/)
+
+
+# 7. 리뷰 
+- 딥러닝 프로젝트의 범위를 미리 정하지 않으면 min-max의 범위가 넒어짐. 
+- 라벨링 시 실제 성능 향상을 위해서 타겟 레이블 별 최소 1500장의 사진이 필요했으나 무대 영상이 적고, 학습 시 충족시킬 좋은 화질 데이터 구하는데 한계 
+- 영상처리할때 컴퓨팅 파워에 의존적인 부분이 있어서 많은 시도를 하기엔 한계.
+- 데이터 변경, 다양한 모델링 학습 및 추론, 모델의 하이퍼파라미터 변경 등 성능에 영향을 미치는 변수는 많으나 프로젝트 기간 내 확인할 수 없어 아쉬움. 각 단계별 성능 향상을 위한 경험론적 노하우 필요.
+- 영상에서 각 프레임별 예측을 진행하는 것이라 정확도가 95%여도 체감상 오류가 몇번 나오면 유저가 느끼는 신뢰도가 급격히 하락함. 
