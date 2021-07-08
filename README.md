@@ -23,7 +23,7 @@
 
 
 ***
-![Process](https://raw.githubusercontent.com/kkogggokk/playdata_Final_project_InYourArea/main/_backup/image/exam_process.png)
+![Process](https://raw.githubusercontent.com/kkogggokk/playdata_Final_project_InYourArea/main/_backup/image/exam_pro.png)
 
 
 # PART1.데이터수집
@@ -155,7 +155,6 @@ if(int(vidcap.get(1)) % 15 == 0):
     - input image size = predict image size 맞춰준다.
     - threshold 값을 조절해서 backgound 인식을 낮춰줄 필요가 있다.
 
-
 # PART4.좌표 추출 및 결측치 처리
 ## 4.1.좌표(xywh)추출 및 csv파일 저장
 - /modeling/detect.py 
@@ -221,7 +220,7 @@ if y + final_h >= height:
 ```
 
 # PART6.웹서비스
-![Web Application Sever Structrue](https://raw.githubusercontent.com/kkogggokk/Fproject/main/web/static/images/WAS%20structure.png)
+![Web Application Sever Structrue](https://raw.githubusercontent.com/kkogggokk/playdata_Final_project_InYourArea/main/_backup/image/WAS%20structure.png)
 
 ```bash
 ├── app
@@ -272,10 +271,10 @@ requestAnimationFrame(sync);
 
 ## 6.4.디벨롭 방향
 - 영상의 화질도 좋으면서 빠르게 로드할수 있는 방법
-- 채팅 기능 추가 
 - 모델을 태워 결과를 보여주는 갤러리 기능 추가 
 - 이미지로 갤러리가 가능하면 동영상도 도전 
-- 팬들의 참여를 통해 데이터 수집 및 라벨링 기능 구현. 
+- 팬들의 참여를 통해 데이터 수집 및 라벨링 기능 구현
+- - 채팅 기능 추가 
 
 
 
